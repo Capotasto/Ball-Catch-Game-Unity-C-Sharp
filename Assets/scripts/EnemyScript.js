@@ -4,7 +4,7 @@ public var Score : ScoreScript;
 
 
 function Start(){
-	Score = GameObject.Find("ScoreSystem").GetComponent("ScoreScript");
+	Score = GameObject.Find("ScoreSystem").GetComponent("ScoreScript") as ScoreScript;
 
 }
 

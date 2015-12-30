@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var score : float = 0.0;
+public static var score : float = 0.0;
 private var life : int = 3;
 var style : GUIStyle;
 
@@ -11,6 +11,10 @@ function Start () {
 
 function addScore(){
 	score += 10;
+}
+
+function getScore(){
+	return score;
 }
 
 function subLife(){
