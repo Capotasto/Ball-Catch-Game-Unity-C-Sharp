@@ -1,5 +1,12 @@
 ﻿#pragma strict
 
+public var Score : ScoreScript;
+
+function Start(){
+	Score = GameObject.Find("ScoreSystem").GetComponent("ScoreScript") as ScoreScript;
+	
+}
+
 function Update () {
 
 	if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved){
@@ -7,8 +14,8 @@ function Update () {
 
 	}
 
-	//var x : float = Input.GetAxis("Horizontal");
-	//transform.Translate(x* 0.3,0,0);
+	var x : float = Input.GetAxis("Horizontal");
+	transform.Translate(x* 0.3,0,0);
 
 }
 
@@ -17,6 +24,8 @@ function OnCollisionEnter(obj:Collision){
 	if	(obj.gameObject.name == "Enemy(Clone)"){
 		transform.localScale.x -= Random.Range(0.1, 0.5);
 		if(transform.localScale.x < 1.0) transform.localScale.x = 1.0;
-
+		//Get Point 
+		Score.addScore();
 	}
+
 }
