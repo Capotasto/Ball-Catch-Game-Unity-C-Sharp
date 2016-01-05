@@ -26,6 +26,6 @@ function getLife(){
 }
 
 function OnGUI () {
-    GUI.Label(Rect(10,10,100,100),"Score: "+score, style);
-    GUI.Label(Rect(10,60,100,100),"Life: "+life, style);
+    GUI.Label(Rect(10,60,100,100),"Score: "+score, style);
+    GUI.Label(Rect(10,110,100,100),"Life: "+life, style);
 }
