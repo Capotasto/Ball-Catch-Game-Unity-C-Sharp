@@ -28,7 +28,7 @@ Download to your android device from play store below or you can clone this proj
 https://play.google.com/store/apps/details?id=com.funkyhacker.catchthebox
 
 ## Licence
-This software is released under the MIT License, see LICENSE.txt.
+This software is released under the MIT License, see [LICENSE.txt](https://github.com/Capotasto/Ball-Catch-Game-Unity-C-Sharp/blob/master/LICENSE.txt)
 
 ## Author
 
